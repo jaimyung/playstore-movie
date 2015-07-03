@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movieapp.android.jmmovieapplication.fragment.SearchNameFragment">
+<!--
+    <ListView android:id="@android:id/list" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView android:id="@android:id/empty" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:gravity="center" />-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#282C30"
+        >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/list"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="5dp"
+            android:dividerHeight="5dp"
+            android:divider="#282C30"/>
+
+    </RelativeLayout>
+</FrameLayout>
